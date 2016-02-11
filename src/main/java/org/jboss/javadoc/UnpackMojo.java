@@ -41,7 +41,7 @@ import org.apache.maven.settings.Settings;
 /**
  *
  */
-@Mojo( name = "unpack", defaultPhase = LifecyclePhase.PROCESS_SOURCES )
+@Mojo( name = "unpack", defaultPhase = LifecyclePhase.DEPLOY, requiresOnline=true )
 public class UnpackMojo extends AbstractMojo {
 
    @Parameter(defaultValue = "${session}", readonly = true, required = true)

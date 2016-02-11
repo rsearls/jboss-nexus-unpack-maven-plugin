@@ -68,3 +68,9 @@ Utility that uploads and unpacks the project's *-javadoc.jar files to RedHat's c
     </build>
  ------
   
+  
+####Command-line
+The plugin's default run phase is deploy, but the plugin can be run separately on the command-line.
+
+       mvn jboss-nexus-unpack:unpack
+    
